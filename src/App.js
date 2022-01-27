@@ -1,22 +1,16 @@
 import logo from './logo.svg';
+import Fountain from './script/emojiPop.tsx';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
+    <div className="App" onClick={() => new Fountain()}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Just click wherever you like
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
